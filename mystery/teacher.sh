@@ -1,5 +1,7 @@
 int_n=$( head -n 179 streets/Buckingham_Place|tail -n 1|grep -o '......$')
 echo $int_n
+intname="interview-$int_n"
+echo $intname
 cd interviews
 cat $( find -name '*699607')
 height=6\'
