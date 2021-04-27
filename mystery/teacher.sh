@@ -10,4 +10,4 @@ nume=$(cat $( find -name '*699607') |rev|cut -d. -f1 | rev | cut -d, -f2| rev | 
 cd ..
 grep -A4 $nums "vehicles"|grep -A4 $nume|grep -B2 -A2 -i $color|grep -B1 -A3 -i $make| grep -B 4 $height
 cd memberships
-cat "AAA" "Delta_SkyMiles" "Museum_of_Bash_History" "Terminal_City_Library"| grep -c "MAIN_SUSPECT"
+cat "AAA" "Delta_SkyMiles" "Museum_of_Bash_History" "Terminal_City_Library"| grep -o "$MAIN_SUSPECT" | wc -l 
